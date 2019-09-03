@@ -31,5 +31,6 @@
     <color name="Gray">#7C7C7E</color>
     <color name="Light_gray">#CECECE</color>
     <color name="White">#ECECEC</color>
+    <color name="Black">#222222</color>
 
 </resources>
