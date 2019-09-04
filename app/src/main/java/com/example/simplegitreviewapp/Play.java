@@ -26,6 +26,10 @@ public class Play extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
+        // Get intent contents
+        Intent intent = getIntent();
+        Deck deck = (Deck) intent.getParcelableExtra(MainActivity.INTENT_EXTRA);
+
         // Get references to Views
         mButtons[0] = (Button) findViewById(R.id.button_optionA);
         mButtons[1] = (Button) findViewById(R.id.button_optionB);
@@ -33,6 +37,7 @@ public class Play extends AppCompatActivity {
         mButtons[3] = (Button) findViewById(R.id.button_optionD);
         mDefinition = (TextView) findViewById(R.id.definition);
 
+        mDefinition.setText(deck.getFlashcards().get(0).toString());
 
     }
 }

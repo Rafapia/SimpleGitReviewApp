@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
 
     // Create flashcards.
@@ -15,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // Intent id.
-    public static final String MAIN_ACTIVITY_MESSAGE = "com.example.simplegitreviewapp.MESSAGE";
+    public static final String INTENT_EXTRA = "com.example.simplegitreviewapp.MESSAGE";
 
 
     @Override
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public void startPlayActivity(View view) {
 
         Intent intent = new Intent(this, Play.class);
-//        intent.putExtra(MAIN_ACTIVITY_MESSAGE, gitTerms);
+        intent.putExtra(INTENT_EXTRA, gitTerms);
         startActivity(intent);
     }
 
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void startTrainActivity(View view) {
 
         Intent intent = new Intent(this, Train.class);
-//        intent.putExtra(MAIN_ACTIVITY_MESSAGE, gitTerms);
+        intent.putExtra(INTENT_EXTRA, gitTerms);
         startActivity(intent);
     }
 

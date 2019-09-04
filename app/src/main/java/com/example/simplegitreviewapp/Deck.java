@@ -30,7 +30,7 @@ public class Deck implements Parcelable {
 
     // Getters and setters
     public ArrayList<Flashcard> getFlashcards() {
-        return (ArrayList<Flashcard>) mFlashcards.clone();
+        return mFlashcards;
     }
 
     public String getName() {
