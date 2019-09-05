@@ -8,6 +8,17 @@
     android:background="@color/Light_Green">
 
 
+    <TextView
+        android:id="@+id/score_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:text="Score: 0/0"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="41dp" />
 
     <TextView
         android:id="@+id/definition"
@@ -82,9 +93,25 @@
             android:background="@color/White"
             android:onClick="whichButton"
             android:text="D"
-            android:textColor="@color/Light_Green" />
+            android:textColor="@color/Light_Green"/>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/option_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward"
+        app:backgroundTint="@color/White"
+        android:tint="@color/Light_Green"
+        android:visibility="invisible"
+        android:onClick="reset"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
