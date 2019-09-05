@@ -16,7 +16,7 @@ public class Train extends AppCompatActivity {
 
         // Get intent contents
         Intent intent = getIntent();
-        Deck deck = (Deck) intent.getParcelableExtra(MainActivity.INTENT_EXTRA);
+        Deck deck = (Deck) intent.getSerializableExtra(MainActivity.INTENT_EXTRA);
 
         TextView mTextView = (TextView) findViewById(R.id.textView);
         mTextView.setText(deck.getDescription());

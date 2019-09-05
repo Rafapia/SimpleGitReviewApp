@@ -1,6 +1,8 @@
 package com.example.simplegitreviewapp;
 
-public class Flashcard {
+import java.io.Serializable;
+
+public class Flashcard implements Serializable {
 
     /* Fields */
     private String key;

@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, Play.class);
         intent.putExtra(INTENT_EXTRA, gitTerms);
+        // TODO figure out how to pass ArrayList<Flashcard> through the intent.
         startActivity(intent);
     }
 

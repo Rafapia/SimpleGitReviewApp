@@ -8,18 +8,20 @@
     android:background="@color/Light_Green">
 
 
+
     <TextView
         android:id="@+id/definition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginVertical="64dp"
+        android:layout_marginVertical="32dp"
         android:text="Description"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/option_buttons"
+        android:textSize="20sp"
         android:textColor="@color/White"
         android:background="@color/Faded_Light_Green"/>
 
@@ -65,10 +67,10 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="16dp"
             android:layout_weight="1"
-            android:background="@color/Magenta"
+            android:background="@color/White"
             android:onClick="whichButton"
             android:text="C"
-            android:textColor="@color/White" />
+            android:textColor="@color/Light_Green" />
 
         <Button
             android:id="@+id/button_optionD"
@@ -77,10 +79,10 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="16dp"
             android:layout_weight="1"
-            android:background="@color/Green"
+            android:background="@color/White"
             android:onClick="whichButton"
             android:text="D"
-            android:textColor="@color/White" />
+            android:textColor="@color/Light_Green" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
