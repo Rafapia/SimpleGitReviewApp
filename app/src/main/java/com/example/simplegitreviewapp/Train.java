@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
+
 
 public class Train extends AppCompatActivity {
 
@@ -15,5 +17,8 @@ public class Train extends AppCompatActivity {
         // Get intent contents
         Intent intent = getIntent();
         Deck deck = (Deck) intent.getParcelableExtra(MainActivity.INTENT_EXTRA);
+
+        TextView mTextView = (TextView) findViewById(R.id.textView);
+        mTextView.setText(deck.getDescription());
     }
 }

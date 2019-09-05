@@ -13,6 +13,7 @@
 
 
     // Custom colors.
+    <!--
     <color name="Dark_blue">#3079ab</color>
     <color name="Light_blue">#39add1</color>
     <color name="Teal">#5ABBB5</color>
@@ -32,5 +33,15 @@
     <color name="Light_gray">#CECECE</color>
     <color name="White">#ECECEC</color>
     <color name="Black">#222222</color>
+    -->
+    
+    // Other colors.
+    <color name="Green">#3ab05b</color>
+    <color name="Light_Green">#3ab096</color>
+    <color name="Faded_Light_Green">#6AC3B1</color>
+    <color name="Brown">#b06f3a</color>
+    <color name="Magenta">#b03a48</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#202020</color>
 
 </resources>

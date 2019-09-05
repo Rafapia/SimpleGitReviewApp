@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -37,7 +39,14 @@ public class Play extends AppCompatActivity {
         mButtons[3] = (Button) findViewById(R.id.button_optionD);
         mDefinition = (TextView) findViewById(R.id.definition);
 
-        mDefinition.setText(deck.getFlashcards().get(0).toString());
-
+        mDefinition.setText(deck.getName());
     }
+
+
+    public void whichButton(View view) {
+        Button btn = (Button) view;
+        Toast toast = Toast.makeText(getApplicationContext(), "Button: " + btn.getText(), Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
 }
