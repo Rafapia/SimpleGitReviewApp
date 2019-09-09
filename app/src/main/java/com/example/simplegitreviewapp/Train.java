@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 
 public class Train extends AppCompatActivity {
+    /**
+     * Doesn'' do much for now.
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

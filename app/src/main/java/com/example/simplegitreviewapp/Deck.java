@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Deck implements Serializable {
+    /**
+     * A collection of Flashcard objects. Has a name and a description,
+     * as well as an ArrayList of Flashcard objects. Implements Serializable
+     * so that it can be passed as an extra through an Intent between Activities.
+     */
 
     /* Fields */
     private ArrayList<Flashcard> mFlashcards;

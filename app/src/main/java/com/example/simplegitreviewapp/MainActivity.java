@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    /**
+     * Main App page. Nothing special here, just two buttons that
+     * take the user to different Activities and the git terms Deck.
+     */
 
     // Create flashcards.
     Deck gitTerms = new Deck("Git Terms", "A review for GIT terms!");

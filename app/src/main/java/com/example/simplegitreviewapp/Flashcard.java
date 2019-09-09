@@ -3,6 +3,11 @@ package com.example.simplegitreviewapp;
 import java.io.Serializable;
 
 public class Flashcard implements Serializable {
+    /**
+     * A Flashcard object holds a definition and a key, or a concept.
+     * It implements Serializable so that it can be passed inside a Deck
+     * between Activities through Intents.
+     */
 
     /* Fields */
     private String key;

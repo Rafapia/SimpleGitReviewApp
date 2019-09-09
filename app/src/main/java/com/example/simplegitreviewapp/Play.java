@@ -54,14 +54,17 @@ public class Play extends AppCompatActivity {
         fab = (FloatingActionButton) findViewById(R.id.fab);
         mScoreBoard = (TextView) findViewById(R.id.score_board);
 
+        // Reset all view.
         reset(getCurrentFocus());
 
     }
 
 
-    public void whichButton(View view) {
+    // Logic for whenever an answer button is clicked.
+    public void buttonPressed(View view) {
         Button btn = (Button) view;
 
+        // If answer is correct.
         if (btn.getText().equals(nextQuestion.get(1))) {
             correctQuestions++;
             questionsPlayed++;
@@ -71,6 +74,7 @@ public class Play extends AppCompatActivity {
             toast.show();
             fab.setVisibility(FloatingActionButton.VISIBLE);
 
+        // If answer is wrong.
         } else {
             questionsPlayed++;
             setButtonAnswer();
@@ -82,8 +86,9 @@ public class Play extends AppCompatActivity {
     }
 
 
-    // Helper methods
-    public void setButtonAnswer() {
+    /* Helper methods */
+    // Colors buttons according to the answer. Green for right and red for wrong.
+    private void setButtonAnswer() {
 
         if (mButtonA.getText().equals(correctAnswer)) {
             mButtonA.setBackgroundColor(getResources().getColor(R.color.Green));
@@ -118,7 +123,8 @@ public class Play extends AppCompatActivity {
         }
     }
 
-    public void resetButtons() {
+    // resets buttons to original color.
+    private void resetButtons() {
 
         mButtonA.setBackgroundColor(getResources().getColor(R.color.White));
         mButtonA.setTextColor(getResources().getColor(R.color.Light_Green));
@@ -134,7 +140,8 @@ public class Play extends AppCompatActivity {
 
     }
 
-    public void reset(View view) {
+    // Resets all elements necessary when the view is loaded or the user goes to the next question.
+    private void reset(View view) {
 
         resetButtons();
         nextQuestion = deck.getNextQuestion();
